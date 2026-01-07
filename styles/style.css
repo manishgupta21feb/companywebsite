@@ -802,7 +802,8 @@ footer .footer-copyright span {
   border-radius: 20px;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.219);
   padding: 75px;
-  width: 68vw;
+  width: 95%;
+  position: relative;
 }
 .contact-form-wrapper .contact-form-inner-wrapper .heading {
   font-weight: 600;
@@ -851,13 +852,13 @@ footer .footer-copyright span {
 }
 .contact-form-wrapper .contact-form-inner-wrapper .get-btn:hover {
   color: #111;
-  background-color: #F4B335;
+  background-color: #f4b335;
   transition: 0.5s;
 }
-.contact-form-wrapper .leaf-img {
+.contact-form-wrapper .contact-form-inner-wrapper .leaf-img {
   position: absolute;
-  bottom: -50px;
-  left: 15px;
+  bottom: -10%;
+  left: -10%;
   width: 150px;
   z-index: -1;
 }
@@ -885,17 +886,15 @@ footer .footer-copyright span {
 }
 .contact-info-wrapper h2 {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 35px;
 }
 .contact-info-wrapper .contact-wrappers {
   display: flex;
-  gap: 30px;
-  justify-content: space-around;
-  padding: 0 220px;
+  justify-content: space-between;
 }
 .contact-info-wrapper .contact-wrappers .wrapper {
-  width: 33%;
+  width: 30%;
   padding: 50px 40px;
   border: 1px solid rgba(28, 176, 151, 0.6156862745);
   border-radius: 10px;
@@ -916,8 +915,190 @@ footer .footer-copyright span {
   color: #666666;
   font-weight: 500;
 }
-.contact-info-wrapper .contact-wrappers .wrapper a {
+.contact-info-wrapper .contact-wrappers .wrapper .link {
   color: #666666;
+}
+
+.map-wrapper {
+  margin: 90px 0;
+  padding: 30px;
+}
+.map-wrapper .map-wrapper-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-wrapper .map-wrapper-inner .map-frame {
+  width: 70VW;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.gallery-section-wrapper {
+  width: 100%;
+  padding: 90px;
+}
+.gallery-section-wrapper .gallery-inner-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-section-wrapper .gallery-inner-section .gallery-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+.gallery-section-wrapper .gallery-inner-section .gallery-section .gallery-style-one-item {
+  height: 55vh;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gallery-section-wrapper .gallery-inner-section .gallery-section .gallery-style-one-item .gallery-img {
+  width: 100%;
+  height: 100%;
+}
+
+.faq-question-wrapper {
+  margin: 80px;
+}
+.faq-question-wrapper .faq-question-inner-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .heading-btn {
+  border: 1px solid #b9e5de;
+  border-radius: 5px;
+  color: #1cb098;
+  padding: 5px 20px;
+  line-height: 25px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-right: 60px;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .heading {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .question-box {
+  width: 96%;
+  border-top: 1px solid black;
+  padding: 30px 0px;
+  line-height: 25px;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .question-box .question-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .question-box .solution {
+  color: #666666;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .question-box .contact-btn {
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #1cb098;
+  width: 175px;
+  height: 52px;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+}
+.faq-question-wrapper .faq-question-inner-section .text-section .question-box .contact-btn:hover {
+  transition: 0.5s;
+  color: black;
+  background-color: #f4b335;
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper {
+  width: 57%;
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion-button {
+  height: 70px;
+  background-color: transparent;
+  outline: none;
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion-button::after {
+  background-image: url("../assets/images/add.svg");
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion-body {
+  padding: 0 25px;
+  color: #666;
+  line-height: 30px;
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion-header {
+  border-bottom: 1px solid rgba(102, 102, 102, 0.4901960784);
+}
+.faq-question-wrapper .faq-question-inner-section .questions-wrapper .accordion-header button {
+  font-size: 18px;
+  color: black;
+  font-weight: 900;
+}
+
+.instructor .instructor-wrapper {
+  margin: 80px 0;
+}
+.instructor .instructor-wrapper .heading {
+  font-size: 36px;
+  font-weight: 600;
+}
+.instructor .instructor-wrapper .heading span {
+  color: #1cb098;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper .instructor-info {
+  position: relative;
+  padding: 6px;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper .instructor-info img {
+  z-index: 2;
+  width: 250px;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper .instructor-info .instructor__shape {
+  position: absolute;
+  bottom: 65px;
+  z-index: -1;
+  width: 100%;
+  height: 210px;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper .instructor-info .instructor-field {
+  margin: 10px 0;
+  font-weight: 600;
+  color: #666;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper .instructor-info .instructor-name {
+  color: #082a5e;
+  font-size: 22px;
+}
+.instructor .instructor-wrapper .instructors-info-wrapper .instructor-info .instructor-name:hover {
+  color: #1363df;
 }
 
 /*# sourceMappingURL=style.css.map */

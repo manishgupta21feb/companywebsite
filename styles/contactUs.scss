@@ -10,13 +10,12 @@
     border-radius: 20px;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.219);
     padding: 75px;
-    width: 68vw;
-
+    width: 95%;
+    position: relative;
     .heading {
       font-weight: 600;
       font-size: 42px;
       margin-bottom: 18px;
-
     }
 
     .input-field {
@@ -27,13 +26,6 @@
       border-bottom: 1px solid #d2e3f9;
       margin-top: 10px;
       margin-bottom: 15px;
-
-      // &::-webkit-outer-spin-button,
-      // &::-webkit-inner-spin-button {
-      //   -webkit-appearance: none;
-      //   margin: 0;
-      // }
-
     }
 
     .input-field-wrapper {
@@ -72,22 +64,17 @@
 
       &:hover {
         color: #111;
-        background-color: #F4B335;
+        background-color: #f4b335;
         transition: 0.5s;
-
       }
-
     }
-
-
-  }
-
-  .leaf-img {
-    position: absolute;
-    bottom: -50px;
-    left: 15px;
-    width: 150px;
-    z-index: -1;
+    .leaf-img {
+      position: absolute;
+      bottom: -10%;
+      left: -10%;
+      width: 150px;
+      z-index: -1;
+    }
   }
 }
 
@@ -115,18 +102,16 @@
 
   h2 {
     font-weight: 600;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 35px;
   }
 
   .contact-wrappers {
     display: flex;
-    gap: 30px;
-    justify-content: space-around;
-    padding: 0 220px;
-
+    // gap: 30px;
+    justify-content: space-between;
     .wrapper {
-      width: 33%;
+      width: 30%;
       padding: 50px 40px;
       border: 1px solid #1cb0979d;
       border-radius: 10px;
@@ -142,7 +127,6 @@
       h4 {
         font-size: 22px;
         font-weight: 600;
-
       }
 
       p {
@@ -151,10 +135,24 @@
         font-weight: 500;
       }
 
-      a {
-
+      .link {
         color: #666666;
       }
+    }
+  }
+}
+
+.map-wrapper {
+  margin: 90px 0;
+  padding: 30px;
+  .map-wrapper-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .map-frame {
+      width: 70VW;
+      height: 500px;
+      border-radius: 20px;
     }
   }
 }
