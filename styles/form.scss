@@ -1,0 +1,39 @@
+@use 'variables';
+
+//Primary Btn Link
+.btn-primary-link {
+  height: 42px;
+  padding: 0 20px;
+  background-color: variables.$themebgSecondary;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: variables.$black;
+  font-weight: 500;
+  &:hover {
+    background-color: variables.$themebg;
+    color: variables.$white !important;
+  }
+}
+
+//Secondary Btn Link
+.btn-secondary-link {
+  height: 42px;
+  padding: 0 20px;
+  background-color: variables.$themebg;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: variables.$black;
+  font-weight: 500;
+  color: variables.$white;
+  i {
+    margin-left: 8px;
+  }
+  &:hover {
+    background-color: variables.$themebgSecondary;
+    color: variables.$black !important;
+  }
+}

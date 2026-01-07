@@ -1,0 +1,110 @@
+footer {
+  padding: 70px 0 35px 0;
+  background-color: #0e2a47;
+  position: relative;
+  .footer-highlight {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    height: 80px;
+  }
+  .footer-inner {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-col-1 {
+    width: 35%;
+    .footer-logo {
+      height: 50px;
+    }
+    .footer-col-1-text {
+      line-height: 35px;
+      margin: 25px 0;
+      font-weight: 500;
+      color: #d2e3f9;
+      max-width: 300px;
+    }
+  }
+  .footer-col-2 {
+    width: 20%;
+  }
+  .footer-col-3 {
+    width: 20%;
+  }
+  .footer-col-4 {
+    width: 25%;
+    li {
+      display: flex;
+      align-items: center;
+      line-height: 24px;
+    }
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      min-width: 40px;
+      border-radius: 100%;
+      background-color: rgba(255, 255, 255, 0.06);
+      border: 1px solid gray;
+      margin-right: 10px;
+    }
+  }
+  .footer-heading {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: white;
+  }
+  .footer-links {
+    li {
+      margin: 17px 0;
+      color: #d2e3f9;
+      font-weight: 500; 
+      line-height: 24px;
+      a {
+        color: #d2e3f9;
+        font-weight: 500;
+        &:hover {
+          color: white;
+        }
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    margin-top: 70px;
+    padding-top: 35px;
+    text-align: center;
+    border-top: 1px solid #ccd6fa;
+    font-weight: 500;
+    color: #d2e3f9;
+    span {
+      color: white;
+    }
+  }
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 8px;
+  li {
+    a {
+      display: flex;
+      height: 40px;
+      width: 40px;
+      background-color:#104262;
+      border: 2px solid #104262;
+      border-radius: 100%;  
+      align-items: center;
+      justify-content: center;
+      color: white;
+      &:hover {
+        background-color: #0e2a47;
+      }
+    }
+  }
+}
