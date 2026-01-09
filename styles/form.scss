@@ -36,4 +36,30 @@
     background-color: variables.$themebgSecondary;
     color: variables.$black !important;
   }
+  &.secondary-btn {
+    outline: none;
+    border: none;
+    transition: 0.5s;
+  }
 }
+
+//textarea
+textarea {
+  resize: none;
+  &.form-control-no-border {
+    height: 200px;
+  }
+}
+
+//form-control-no-border
+.form-control-no-border {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  padding: 12px 0;
+  border-bottom: 1px solid #d2e3f9;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
