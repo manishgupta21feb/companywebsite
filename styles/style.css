@@ -845,6 +845,17 @@ footer .footer-copyright span {
   margin-left: 0;
   margin-right: 10px;
 }
+.contact-form-wrapper .contact-form-inner-wrapper .input-box {
+  width: 100%;
+  position: relative;
+}
+.contact-form-wrapper .contact-form-inner-wrapper .input-box p {
+  font-size: 12px;
+  color: red;
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
 .contact-form-wrapper .contact-form-inner-wrapper .leaf-img {
   position: absolute;
   bottom: 0;
