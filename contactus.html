@@ -366,6 +366,18 @@
       };
 
       const submit = () => {
+        if (
+          name.value == "" &&
+          email.value == "" &&
+          text.value == "" &&
+          phoneNo.value == ""
+        ) {
+          inputField1.style.display = "block";
+          inputField2.style.display = "block";
+          inputField2.innerText = "Email is required";
+          inputField3.style.display = "block";
+          inputField4.style.display = "block";
+        }
         if (name.value == "") {
           inputField1.style.display = "block";
         } else if (email.value == "") {
@@ -373,7 +385,7 @@
           inputField2.innerText = "Email is required";
         } else if (!(email.value.includes("@") && email.value.includes("."))) {
           inputField2.style.display = "block";
-          inputField2.innerText = "@ or . is required";
+          inputField2.innerText = "Email is not valid ";
         } else if (phoneNo.value == "") {
           inputField3.style.display = "block";
         } else if (text.value == "") {
