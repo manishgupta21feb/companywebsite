@@ -32,10 +32,10 @@
 
 //Header
 header {
-  height: 75px;
+  height: 80px;
   background-color: variables.$white;
   .header-inner {
-    height: 75px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,14 +49,66 @@ header {
         display: flex;
         align-items: center;
         gap: 40px;  
-        a {
-          color: variables.$black;
-          font-weight: 500;
-          font-size: 16px;
-          &:hover {
-            color: variables.$themebgSecondary;
+        & > li {
+          position: relative;
+            & > a {
+            color: variables.$black;
+            font-weight: 500;
+            font-size: 16px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            .fa-angle-down {
+              margin-left: 10px;
+            }
+            &:hover {
+              color: variables.$themebgSecondary;
+              & + .sub-menu {
+                display: block;
+              }
+            }
+          }
+          &:last-child {
+            a {
+              height: 42px;
+            }
           }
         }
+      }
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  z-index: 99;
+  background-color: white;
+  min-width: 220px;
+  display: none;
+  &:hover {
+    display: block;
+  }
+  li {
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      height: 45px;
+      border-bottom: 1px solid gray;
+      color: #000;
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: #662b81;
+        color: white;
+      }
+    }
+    &:last-child {
+      a {
+        border: none;
       }
     }
   }

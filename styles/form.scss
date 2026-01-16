@@ -63,3 +63,30 @@ textarea {
   margin-bottom: 25px;
 }
 
+.form-group-row {
+  display: flex;  
+  gap: 20px;  
+  .form-group-col {
+    width: 50%;
+    .from-control {
+      width: 100%;
+    }
+  }
+}
+
+.form-control {
+  height: 55px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+textarea {
+  &.form-control {
+    height: 120px;
+    padding-top: 12px;
+  }
+}

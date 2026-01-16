@@ -14,6 +14,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
 </head>
 
 <body>
@@ -93,7 +95,7 @@
       </div>
     </div>
   </div>
-  <div>
+  <div class="about-section-wrapper">
     <div class="container">
       <div class="about-section">
         <div class="about-image-section">
@@ -122,169 +124,106 @@
               Continuous Support
             </li>
           </ul>
-          <div class="about-link-wrapper">
-            <a class="link1 link">Learn More </a>
-            <a class="link2 link">Contact Us</a>
-          </div>
         </div>
         <div class="video-model-box" id="video-model">
-          <div class="closeBtn" onclick="closeFunction()"><i class="fa fa-times" aria-hidden="true"></i></div>
-          <video loop autoplay controls muted>
-            <source src="assets/videos/home-bg.mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  <div>
-    <div class="container">
-      <div class="professional-instructor-section">
-        <div class="instructor-top-section">
-          <h3 class="heading-1">Professional Instructor</h3>
-          <h2 class="heading-2">Meet the talented advisor form our
-            institute</h2>
-        </div>
-        <div class="instructors-info-wrapper">
-          <div class="instructor-design">
-            <div class="instructor-item">
-              <div class="image-wrapper">
-                <img src="assets/images/1.jpg" alt="">
-              </div>
-
-              <div class="instructor-details">
-                <h2 class="instructor-name"> Kennsual Martin</h2>
-                <h3 class="instructor-work">Laravel Tutor</h3>
-              </div>
-            </div>
-            <div class="instructor-item">
-              <div class="image-wrapper">
-                <img src="assets/images/2.jpg" alt="">
-              </div>
-              <div class="instructor-details">
-                <h2 class="instructor-name"> Sarahub Albert</h2>
-                <h3 class="instructor-work">Spoken Tutor</h3>
-              </div>
-            </div>
-            <div class="instructor-item3">
-              <div class="tech-way-box">
-                <h2>Teach your way</h2>
-                <p>Education rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison.
-                </p>
-
-                <h2>Inspire learners</h2>
-                <p> Teaching do existence northward as per preserved daughters. Continued at up to zealously necessary
-                  term
-                  breakfast surrounded.</p>
-                <a class="btn" href="#">
-                  Become a
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="instructor-design">
-            <div class="instructor-item">
-              <div class="image-wrapper">
-                <img src="assets/images/3.jpg" alt="">
-              </div>
-              <div class="instructor-details">
-                <h2 class="instructor-name">Amanulla Joey</h2>
-                <h3 class="instructor-work">WordPress Tutor</h3>
-              </div>
-            </div>
-            <div class="instructor-item">
-              <div class="image-wrapper">
-                <img src="assets/images/img4.png" alt="">
-              </div>
-              <div class="instructor-details">
-                <h2 class="instructor-name">Kamal Abraham</h2>
-                <h3 class="instructor-work">React Tutor</h3>
-              </div>
-            </div>
-            <div class="instructor-item">
-              <div class="image-wrapper">
-                <img src="assets/images/img6.png" alt="">
-              </div>
-              <div class="instructor-details">
-                <h2 class="instructor-name">Daniyel Joe</h2>
-                <h3 class="instructor-work">Jave Tutor</h3>
-              </div>
-            </div>
-
+          <div class="video-box-with-close">
+            <div class="closeBtn" onclick="closeFunction()"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <video loop autoplay controls muted>
+              <source src="assets/videos/home-bg.mp4">
+            </video>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div>
+
+  <div class="about-review-wrapper">
     <div class="container">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slider-top">
-              <div class="icon">
-                <img src="assets/images/" alt="">
-              </div>
-              <h5>Best Course Ever</h5>
+      <div class="heading-box-container">
+        <div class="heading-box">Student Feedback</div>
+      </div>
+      <h2 class="heading-text">Best review from our <br />successful student</h2>
+    </div>
+    <div class="about-review-boxes-wrapper dc-continuous-review-swiper">
+      <div class="swiper-wrapper">
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
             </div>
-            <p> Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind
-              is
-              a
-              terrible thing to waste. Education is a key to success and freedom from all the forces to learn we love to
-              purse a best education platform. Plan upon yet way get cold spot its week. Almost do am or limits hearts.
-              Resolve parties but why she shewing. She sang know now
-            </p>
+            <h3>Brillient Brain</h3>
           </div>
-          <div class="swiper-slide">
-            <div class="slider-top">
-              <div class="icon">
-                <img src="assets/images/" alt="">
-              </div>
-              <h5>Exellent Quality</h5>
-            </div>
-            <div class="content">
-              <p>
-                Learning is the most powerful tool to change the world One thing that can’t be taken from you. A mind is
-                a
-                terrible thing to waste. Education is a key to success and freedom from all the forces to learn we love.
-                The
-                best educaiton system i love this. Plan upon yet way get cold spot its week.
-              </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-top">
-              <div class="icon">
-                <img src="assets/images/" alt="">
-              </div>
-              <h5>Best Course Ever</h5>
-            </div>
-            <p> Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind
-              is
-              a
-              terrible thing to waste. Education is a key to success and freedom from all the forces to learn we love to
-              purse a best education platform. Plan upon yet way get cold spot its week. Almost do am or limits hearts.
-              Resolve parties but why she shewing. She sang know now
-            </p>
-          </div>
-          <div class="swiper-slide">
-            <div class="slider-top">
-              <div class="icon">
-                <img src="assets/images/" alt="">
-              </div>
-              <h5>Great Quality</h5>
-            </div>
-            <p>
-              Education is the most powerful tool to change the world One thing that can’t
-              be taken from you. A mind is a
-              terrible thing to waste of perfection.
-            </p>
-          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be
+            taken from you. A mind is a terrible thing to waste. Education is a key to success and freedom from all the
+            forces to learn we love to purse a best education platform. Plan upon yet way get cold spot its week. Almost
+            do am or limits hearts. Resolve parties but why she shewing. She sang know now</p>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind is a terrible thing to waste of perfection.</p>
+        </div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind is a terrible thing to waste. Education is a key to success and freedom from all the forces to learn we love to purse a best education platform. Plan upon yet way get cold spot its week</p>
+        </div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind is a terrible thing to waste of perfection. that can’t be taken from you. A mind is a terrible thing to waste of perfection</p>
+        </div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be
+            taken from you. A mind is a terrible thing to waste. Education is a key to success and freedom from all the
+            forces to learn we love to purse a best education platform. Plan upon yet way get cold spot its week. Almost
+            do am or limits hearts. Resolve parties but why she shewing. She sang know now</p>
+        </div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind is a terrible thing to waste of perfection.</p>
+        </div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind is a terrible thing to waste. Education is a key to success and freedom from all the forces to learn we love to purse a best education platform. Plan upon yet way get cold spot its week</p>
+        </div>
+        <div class="about-review-box swiper-slide">
+          <div class="about-review-box-header">
+            <div class="about-header-info">
+              <img src="./assets/images/quote.png" alt="quote" />
+            </div>
+            <h3>Brillient Brain</h3>
+          </div>
+          <p class="about-review-text">Education is the most powerful tool to change the world One thing that can’t be taken from you. A mind is a terrible thing to waste of perfection. that can’t be taken from you. A mind is a terrible thing to waste of perfection</p>
+        </div>
       </div>
     </div>
   </div>
@@ -403,23 +342,22 @@
       model.style.display = 'none'
     }
 
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
 
+    const dcContinuousReviewSwiper = new Swiper(
+      ".dc-continuous-review-swiper",
+      {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
+        speed: 7000,          // smooth continuous motion
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false
+        },
+        freeModeMomentum: false,
+        grabCursor: false
+      }
+    );
   </script>
 </body>
 
